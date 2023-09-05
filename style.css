@@ -1,0 +1,262 @@
+*{
+   color: white;
+}
+.home{
+    flex:1;
+    background-color: black;
+    overflow-y: auto;
+    height: 100%;
+}
+.home-page{
+    flex:4;
+    background-color: #212121;
+    overflow-y: auto;
+    height: 100vh; 
+}  
+
+.home-class>h6>img{
+margin-inline: 3px;
+}
+.home-class2>h6{
+    margin-inline: 20px;
+    padding-block: 4px;
+}
+.home-class>h6:hover{
+    color:rgb(213, 206, 206);
+}
+.home-class2>h6:hover{
+    color:rgb(213, 206, 206);
+}
+.install>h4>img{
+    margin: 10px;
+}
+
+.nav-bar{
+    background-color: rgb(69, 66, 66);
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    padding: 20px;
+}
+.btn-left, .btn-right, .picture{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:#212121;
+    border: hidden;
+}
+.signin-btn{
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #212121;
+    border: hidden;
+   
+}
+.my-container{
+    margin-inline: 20px;
+}
+.my-container>h2{
+padding: 20px;
+}
+.box{
+    margin-inline: 15px;
+}
+.liked-songs{
+    margin: 10px;
+    width:370px;
+    height:100px;
+    background-color: rgb(40, 46, 46) !important;
+    border-radius: 5px;
+   
+}
+.liked-songs>h4{
+    padding: 10px;
+}
+.liked-songs:hover{
+    background-color: rgb(34, 36, 36) !important;
+}
+/* my-artists*/
+.my-artists{
+    padding: 30px;
+    margin-bottom: 150px;
+}
+.head{
+    margin-inline: 15px;
+}
+.cards-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cards{
+    width:230px;
+    height: 290px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 46, 46) !important;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+.cards:hover{
+    background-color: rgb(32, 34, 34) !important;
+}
+.img>img{
+    width:200px;
+    height:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    object-fit: fill;
+}
+.motivation{
+    padding: 10px;
+}
+
+/*footer */
+.footer-sec{
+    background-color: rgb(20, 20, 20);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.green-bar{
+    background-color: rgba(30, 215, 96, 1);
+    text-align: end;
+}
+.current-song{
+    padding-top: 10px;
+}
+
+.justin>h6, .justin>p{
+    margin-inline: 10px;
+    
+}
+.justin>p{
+    margin-bottom: -10px; 
+}
+.player>img{
+    padding-top: 10px;
+    padding-inline: 15px;
+}
+
+.song-bar>p{
+    margin-inline: 15px;
+}
+.sound-bar{
+    margin-inline: 10px;
+    
+}
+.sound-bar>img{
+    padding-inline: 5px;
+}
+.song-play {
+    background-color: #C4C4C4;
+    height: 4px;
+    width: 30vw;
+    border-radius: 3px;
+ }
+/*---------part2-----------*/
+
+
+.part1{
+    flex:1;
+    background-color: black;
+    overflow-y: auto;
+    height: 100vh;
+}
+.part2{
+    flex:4;
+    background-color: #212121;
+    padding: 20px;
+    overflow-y: auto;
+    height: 100vh;
+}
+.lady-img>img{
+    margin-top: 40px ;
+}
+
+.artist-area{
+    background-color: rgb(79, 105, 107);
+}
+
+.home-class>h6>img{
+    margin-inline: 10px;
+    padding: 5px;
+}
+.home-class>a>h6>img{
+    margin-inline: 10px;
+    padding: 5px;
+    
+}
+.home-class>a{
+    text-decoration: none;
+    color: white;
+}
+.home-class>h5{
+    margin-inline: 20px;
+    padding-bottom: 5px;
+}
+.home-class{
+    padding: 5px;
+}
+hr{
+    margin: 1px;
+}
+
+.my-icons>i{
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 20px;
+
+}
+.album>.title{
+margin-inline: 80px ;
+}
+.songs-list{
+   width: 100%;
+   margin-block: 10px;
+   
+}
+.songs-list:hover{
+background-color: rgb(68, 66, 66);
+}
+.song>p{
+    margin-right: 10px;
+}
+
+.song-name{
+    padding-inline: 10px;
+}
+.song-time>i{
+padding-inline: 10px;
+}
+
+
+
+
+
+@media screen and (max-width:768px){
+    .playlist-detail, .main{
+        flex-direction: column;
+    }
+    .artist-area{
+        flex-direction: column !important;
+    }
+    .songs-list{
+        flex-wrap: wrap !important;
+    }
+    .footer{
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
+    .album>div, .song-bar>p, .sound-bar{
+        display: none !important;
+    }
+    .song-play{
+        width: 100%;
+    }
+    
+}
